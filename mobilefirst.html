@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="nl" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link href="https://fonts.googleapis.com/css2?family=Edu+SA+Beginner&family=Lato:wght@100&family=Poppins:wght@100;500&display=swap" rel="stylesheet">
+    <title>Mobile First</title>
+    <style type="text/css">
+      body {
+        background-color: grey;
+        font-family: verdana, sans-serif;
+        font-size: 14px;
+      }
+      @media only screen and (min-width:768) {
+        body{
+          background-color: pink;
+        }
+      }
+        [class*="col-"] {
+      width: 100%;
+        }
+        @media only screen and (min-width: 768px) {
+      [class*="col-"] {
+      float: left;
+      padding: 15px;
+        }
+      .col-1 {width: 8.33%;}
+      .col-2 {width: 16.66%;}
+      .col-3 {width: 25%;}
+      .col-4 {width: 33.33%;}
+      .col-5 {width: 41.66%;}
+      .col-6 {width: 50%;}
+      .col-7 {width: 58.33%;
+      .col-8 {width: 66.66%;}
+      .col-9 {width: 75%;}
+      .col-10 {width: 83.33%;}
+      .col-11 {width: 91.66%;}
+      .col-12 {width: 100%;}
+      }
+      #koptekst {
+        text-align: center;
+      }
+      h1 {
+        font-family: 'Poppins', sans-serif;
+        text-align: center;
+        display: inline-block;
+        background-image: url("nieuwerkerk.jpeg");
+        align-vertical: middle;
+        background-repeat: repeat;
+        padding: 10px;
+        border-radius: 10px;
+        border: 2px;
+        border-color: red;
+        border-style: solid;
+      }
+      h2 {
+        color: black;
+      }
+      .row {
+        display: flex;
+        color: white;
+      }
+      .mid2 {
+      background-color: rgba(0,0,0,.5);
+      border-top-left-radius: 10px;
+      border-bottom-left-radius: 10px;
+    }
+      .mid3 {
+        background-color: rgba(23, 235, 125, 0.28);
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+      }
+      img{
+      float: left;
+      width: 10%;
+      margin-right: 10px;
+      border-radius: 5px;
+      border: 2px solid white;
+      padding: 4px;
+      }
+      footer {
+        text-align: center;
+        background-color: rgba(0,0,0,.5);
+        padding: 10px;
+        margin-top: 10px;
+        border-radius: 10px;
+        color: grey;
+        font-family: Poppins;
+      }
+      li {
+        list-style-image: url('check.png');
+      }
+    </style>
+  </head>
+  <header>
+    <section id="koptekst">
+      <h1>Nieuwerkerk aan den IJssel</h1>
+    </section>
+  </header>
+  <body>
+    <div class="row">
+      <div class="col-2 mid2">
+        <h2>Top 5 van Nieuwerkerk</h2>
+        <ol>
+          <li>Wij hebben een Jumbo</li>
+          <li>Wij hebben een Albert Heijn</li>
+          <li>Wij hebben een Hema</li>
+          <li>Wij hebben een Intertoys</li>
+          <li>Wij hebben een slager</li>
+        </ol>
+      </div>
+      <div class="col-9 mid3">
+        <div class="art1">
+          <h2>Dit artikel gaat over Nieuwerkerk</h2>
+          <p><img src="nieuwerkerk.jpeg" alt="nieuwerkerk"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis diam tortor, lobortis sed eleifend sed, maximus ac enim. Duis mattis quis eros in dignissim. Phasellus id rutrum neque. Nulla tincidunt ipsum ac dui pellentesque maximus. Aenean sodales diam et dui lobortis pretium. Phasellus facilisis congue ex vitae dictum. Vestibulum ut ornare ligula. Vivamus posuere, arcu at lobortis convallis, nisi mauris iaculis odio, vel vestibulum nisl risus vel erat. Aenean dolor risus, pulvinar ac molestie dictum, faucibus eget massa. Nunc et ante eget sapien sollicitudin auctor ac id risus. Etiam et mollis magna.</p>
+        </div><hr>
+        <div class="art2">
+          <h2>Het eerste Nieuwerkerk artikel!</h2>
+          <p><img src="nieuwerkerk.jpeg" alt="nieuwerkerk"> Nam sed tortor mollis, malesuada tortor in, ultricies elit. Duis pulvinar, massa eget efficitur convallis, sem arcu consequat orci, in hendrerit dui orci at velit. Cras pharetra nec nunc a rhoncus. Mauris sapien diam, feugiat et mollis ac, varius non ipsum. Sed cursus enim lorem, vehicula dignissim dolor mattis ut. Suspendisse at dapibus sapien. Etiam imperdiet urna ac quam interdum mollis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Cras luctus ante massa, consectetur pretium ex dignissim non. Fusce ultricies, turpis vel lobortis elementum, erat enim aliquet justo, at volutpat nibh nibh vel magna. Sed eu sagittis libero.</p>
+        </div>
+      </div>
+    </div>
+  </body>
+  <footer>Pagina is gemaakt door Mike de Ruiter</footer>
+</html>
